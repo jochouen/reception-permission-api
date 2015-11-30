@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password:
+  socket: /tmp/mysql.sock
+ 
+development:
+  <<: *default
+  database: fuman_development
+ 
+test:
+  <<: *default
+  database: fuman_test
+ 
+production:
+  <<: *default
+  database: fuman_production
+  username: root
+  password:

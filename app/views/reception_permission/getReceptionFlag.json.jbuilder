@@ -1,0 +1,1 @@
+json.reception_flag @users.reception_flag
